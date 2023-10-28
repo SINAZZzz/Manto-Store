@@ -1,0 +1,152 @@
+:root {
+  --primary-bg: #242526;
+  --secondary-bg: #fff;
+  --primary-text-color: #555;
+  --secondary-text-color: #cecece;
+  --border-radius: 8px;
+  --speed: 500ms;
+}
+
+.menu-container ul {
+  list-style: none;
+}
+
+.menu-container a {
+  text-decoration: none;
+}
+
+.menu-container .menu-trigger img {
+  position: absolute;
+  top: 15px;
+  height: 60px;
+  width: 60px;
+  left: 2em;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.menu-container .dropdown-menu {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 20px 20px 20px 0.2px;
+
+  /* max-height: 20rem; */
+  width: 300px;
+}
+.dropdown-body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 20rem;
+}
+
+/* .menu-container .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 65px;
+  height: 20px;
+  width: 20px;
+  background: rgb(109 40 217);
+  var(--secondary-bg)
+  transform: rotate(45deg);
+} */
+
+.menu-container .dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+}
+
+.menu-container .dropdown-menu.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3px);
+  transition: var(--speed) ease;
+}
+
+.menu-container h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  line-height: 1.2rem;
+}
+
+.menu-container h3 span {
+  font-size: 14px;
+  color: #848484;
+  font-weight: 500;
+}
+
+.menu-container ul li {
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.menu-container ul li:hover a {
+  color: rgb(212, 33, 9);
+  cursor: pointer;
+}
+
+.menu-container ul li:hover img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.menu-container .dropdownItem {
+  display: flex;
+  margin: 10px auto;
+  align-items: center;
+}
+
+.dropdown-prdoct-item{
+  font-size: 13px;
+}
+
+.menu-container .dropdownItem img {
+  max-width: 3rem;
+  max-height: 5rem;
+  margin-left: 20px;
+  border-radius: 15px;
+}
+
+.menu-container .dropdownItem p {
+  max-width: 100px;
+  margin-left: 20px;  
+  transition: var(--speed);
+}
+
+.Delete-icon{
+  font-size: 15px;
+}
+
+
+
+.Delete-icon:hover{
+  color: #ff5252;
+  cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(109 40 217);
+}

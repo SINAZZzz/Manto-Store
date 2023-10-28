@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-Dana bg-gray-200;
+  }
+  .dropdown {
+    @apply w-full lg:max-w-[296px] cursor-pointer;
+  }
+  .dropdown-btn {
+    @apply flex h-[64px] items-center px-[18px] border rounded-lg;
+  }
+  .dropdown-icon-primary {
+    @apply text-2xl mr-[18px] text-violet-700;
+  }
+  .dropdown-icon-secondary {
+    @apply text-2xl text-violet-700 ml-auto;
+  }
+  .dropdown-menu {
+    @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg;
+  }
+}
+
+/* bold */
+@font-face {
+  font-family: Dana-Bold;
+  font-weight: bold;
+  font-style: normal;
+  src: url("./assets/DanaPro(10Wt)/DanaPro(10Wt)/Old version (not supported)/Dana-Semipro/webfonts/fonts/eot/dana-extrabold.eot");
+  src: url("./assets/DanaPro(10Wt)/DanaPro(10Wt)/Old version (not supported)/Dana-Semipro/webfonts/fonts/eot/dana-extrabold.eot")
+      format("embedded-opentype"),
+    url("./assets/DanaPro(10Wt)/DanaPro(10Wt)/Webfonts/fonts/woff2/Dana-ExtraBold.woff2")
+      format("woff2"),
+    url("./assets/DanaPro(10Wt)/DanaPro(10Wt)/Webfonts/fonts/woff/Dana-ExtraBold.woff")
+      format("woff"),
+    url("./assets/DanaPro(10Wt)/DanaPro(10Wt)/Dana family/Dana-ExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+/* normal */
+@font-face {
+  font-family: Dana;
+  font-weight: normal;
+  font-style: normal;
+  src: url("./assets/DanaPro(10Wt)/DanaPro(10Wt)/Old version (not supported)/Dana-Semipro/webfonts/fonts/eot/dana-regular.eot");
+  src: url("./assets/DanaPro(10Wt)/DanaPro(10Wt)/Old version (not supported)/Dana-Semipro/webfonts/fonts/eot/dana-regular.eot")
+      format("embedded-opentype"),
+    url("./assets/DanaPro(10Wt)/DanaPro(10Wt)/Farsi numerals/Webfonts/woff2/DanaFaNum-Regular.woff2")
+      format("woff2"),
+    url("./assets/DanaPro(10Wt)/DanaPro(10Wt)/Farsi numerals/Webfonts/woff/DanaFaNum-Regular.woff")
+      format("woff"),
+    url("./assets/DanaPro(10Wt)/DanaPro(10Wt)/Dana family/Dana-Regular.ttf")
+      format("truetype");
+  font-display: swap;
+}
