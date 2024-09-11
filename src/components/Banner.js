@@ -4,8 +4,6 @@ import React from "react";
 import Image from "../assets/img/back-1.png";
 // component
 import Search from "../components/Search";
-// slider
-import Slider from "./Slider/Slider";
 
 const Banner = () => {
   return (
@@ -38,7 +36,6 @@ const Banner = () => {
         justify-start items-star ml-[135px] -mt-36"
         >
           <img src={Image} alt="" />
-          {/* <Slider /> */}
         </div>
       </div>
       <Search />
