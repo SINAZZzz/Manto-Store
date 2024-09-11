@@ -1,19 +1,14 @@
-// :):
 import React from "react";
-import Profile from "./Profile/Profile";
 // Link
 import { Link } from "react-router-dom";
-// Logo
-import Logo from "../assets/img/logo.svg";
-// Sign In
-import SignIn from "./SignIn/SignIn";
+
 const Header = () => {
   return (
     <header className="py-8 mb-12 border-b w-full">
       <div className="flex px-[7%] justify-between items-center">
         {/* Logo */}
         <Link to="/">
-          <img src={Logo} alt="" />
+          <p className="text-xl font-bold">SINA ZINSAZ</p>
         </Link>
         {/* button */}
         <div className="flex items-center gap-6 z-10">
@@ -29,7 +24,6 @@ const Header = () => {
             ثبت نام
           </Link>
         </div>
-        {/* <Profile /> */}
       </div>
     </header>
   );
